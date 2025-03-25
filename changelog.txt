@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2025-03-25
+  Fixes:
+    - HR version is no longer supported, all graphics are now HR
+    - added modules-t4 as banned as that mod does the same (lesser than this)
+    - removed module_specification namespace
+    - renamed effectivity to efficiency to conform with base/core
+    - result/*_amount is now combined in `results={{type="item", name="foo", amount=n}}
+    - key `ingredients` doesn't support short-hand aray, it must always be full table
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 2020-06-22
+  Changes:
+    - Updated graphics for v18
+---------------------------------------------------------------------------------------------------
