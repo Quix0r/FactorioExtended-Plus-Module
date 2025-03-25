@@ -45,17 +45,17 @@ technologies = {
     { order = "a-a-a", name = "effect-transmission-mk2", count = 200, time = 60, prerequisite = {"effect-transmission"}, ingredients = science_t4 },
     { order = "a-a-b", name = "effect-transmission-mk3", count = 500, time = 60, prerequisite = {"effect-transmission-mk2"}, ingredients = science_t5 },
 
-    { order = "a-b-a", name = "speed-module-4", count = 500, time = 60, prerequisite = {"speed-module-3"}, ingredients = science_t4 },
+    { order = "a-b-a", name = "speed-module-4", count = 500 , time = 60, prerequisite = {"speed-module-3"}, ingredients = science_t4 },
     { order = "a-b-b", name = "speed-module-5", count = 1000, time = 60, prerequisite = {"speed-module-4"}, ingredients = science_t5 },
-    { order = "a-b-c", name = "speed-module-6", count = 2000, time = 60, prerequisite = {"speed-module-5"}, ingredients = science_t5 },
+    { order = "a-b-c", name = "speed-module-6", count = 2000, time = 60, prerequisite = {"speed-module-5"}, ingredients = science_t6 },
 
-    { order = "a-c-a", name = "efficiency-module-4", count = 500, time = 60, prerequisite = {"efficiency-module-3"}, ingredients = science_t4 },
+    { order = "a-c-a", name = "efficiency-module-4", count = 500 , time = 60, prerequisite = {"efficiency-module-3"}, ingredients = science_t4 },
     { order = "a-c-b", name = "efficiency-module-5", count = 1000, time = 60, prerequisite = {"efficiency-module-4"}, ingredients = science_t5 },
-    { order = "a-c-c", name = "efficiency-module-6", count = 2000, time = 60, prerequisite = {"efficiency-module-5"}, ingredients = science_t5 },
+    { order = "a-c-c", name = "efficiency-module-6", count = 2000, time = 60, prerequisite = {"efficiency-module-5"}, ingredients = science_t6 },
 
-    { order = "a-d-a", name = "productivity-module-4", count = 500, time = 60, prerequisite = {"productivity-module-3"}, ingredients = science_t4 },
+    { order = "a-d-a", name = "productivity-module-4", count = 500 , time = 60, prerequisite = {"productivity-module-3"}, ingredients = science_t4 },
     { order = "a-d-b", name = "productivity-module-5", count = 1000, time = 60, prerequisite = {"productivity-module-4"}, ingredients = science_t5 },
-    { order = "a-d-c", name = "productivity-module-6", count = 2000, time = 60, prerequisite = {"productivity-module-5"}, ingredients = science_t5 }
+    { order = "a-d-c", name = "productivity-module-6", count = 2000, time = 60, prerequisite = {"productivity-module-5"}, ingredients = science_t6 }
 }
 
 beacons = {
@@ -131,19 +131,23 @@ productivity_modules = {
 
 if (mods["quality"]) then
     quality_modules = {
-        { order = "d-a", name = "quality-module-4", quality = 0.3, speed = -0.05, tier = 4, energy_required = 120, ingredients = {
+        { order = "e-a", name = "quality-module-4", quality = 0.3, speed = -0.05, tier = 4, energy_required = 120, ingredients = {
             {type="item", name="quality-module-3", amount=6 },
             {type="item", name="processing-unit" , amount=10}
         }, technology = "quality-module-4" },
 
-        { order = "d-b", name = "quality-module-5", quality = 0.35, speed = -0.05, tier = 5, energy_required = 240, ingredients = {
+        { order = "e-b", name = "quality-module-5", quality = 0.35, speed = -0.05, tier = 5, energy_required = 240, ingredients = {
             {type="item", name="quality-module-4", amount=4 },
             {type="item", name="processing-unit" , amount=10}
         }, technology = "quality-module-5" },
 
-        { order = "d-c", name = "quality-module-6", quality = 0.4, speed = -0.05, tier = 6, energy_required = 480, ingredients = {
+        { order = "e-c", name = "quality-module-6", quality = 0.4, speed = -0.05, tier = 6, energy_required = 480, ingredients = {
             {type="item", name="quality-module-5", amount= 4},
             {type="item", name="processing-unit" , amount=10}
         }, technology = "quality-module-6" }
     }
+
+    table.insert(technologies, { order = "a-e-a", name = "quality-module-4", count = 500 , time = 60, prerequisite = {"quality-module-3"}, ingredients = science_t4 })
+    table.insert(technologies, { order = "a-e-b", name = "quality-module-5", count = 1000, time = 60, prerequisite = {"quality-module-4"}, ingredients = science_t5 })
+    table.insert(technologies, { order = "a-e-c", name = "quality-module-6", count = 2000, time = 60, prerequisite = {"quality-module-5"}, ingredients = science_t6 })
 end
