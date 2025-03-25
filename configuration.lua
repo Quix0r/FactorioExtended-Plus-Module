@@ -45,7 +45,6 @@ technologies = {
     { order = "a-a-a", name = "effect-transmission-mk2", count = 200, time = 60, prerequisite = {"effect-transmission"}, ingredients = science_t4 },
     { order = "a-a-b", name = "effect-transmission-mk3", count = 500, time = 60, prerequisite = {"effect-transmission-mk2"}, ingredients = science_t5 },
 
-
     { order = "a-b-a", name = "speed-module-4", count = 500, time = 60, prerequisite = {"speed-module-3"}, ingredients = science_t4 },
     { order = "a-b-b", name = "speed-module-5", count = 1000, time = 60, prerequisite = {"speed-module-4"}, ingredients = science_t5 },
     { order = "a-b-c", name = "speed-module-6", count = 2000, time = 60, prerequisite = {"speed-module-5"}, ingredients = science_t5 },
