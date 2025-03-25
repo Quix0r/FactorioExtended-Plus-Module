@@ -48,14 +48,14 @@ technologies = {
     { order = "a-b-a", name = "speed-module-4", count = 500, time = 60, prerequisite = {"speed-module-3"}, ingredients = science_t4 },
     { order = "a-b-b", name = "speed-module-5", count = 1000, time = 60, prerequisite = {"speed-module-4"}, ingredients = science_t5 },
     { order = "a-b-c", name = "speed-module-6", count = 2000, time = 60, prerequisite = {"speed-module-5"}, ingredients = science_t5 },
-    
+
     { order = "a-c-a", name = "efficiency-module-4", count = 500, time = 60, prerequisite = {"efficiency-module-3"}, ingredients = science_t4 },
     { order = "a-c-b", name = "efficiency-module-5", count = 1000, time = 60, prerequisite = {"efficiency-module-4"}, ingredients = science_t5 },
     { order = "a-c-c", name = "efficiency-module-6", count = 2000, time = 60, prerequisite = {"efficiency-module-5"}, ingredients = science_t5 },
-    
+
     { order = "a-d-a", name = "productivity-module-4", count = 500, time = 60, prerequisite = {"productivity-module-3"}, ingredients = science_t4 },
     { order = "a-d-b", name = "productivity-module-5", count = 1000, time = 60, prerequisite = {"productivity-module-4"}, ingredients = science_t5 },
-    { order = "a-d-c", name = "productivity-module-6", count = 2000, time = 60, prerequisite = {"productivity-module-5"}, ingredients = science_t5 },
+    { order = "a-d-c", name = "productivity-module-6", count = 2000, time = 60, prerequisite = {"productivity-module-5"}, ingredients = science_t5 }
 }
 
 beacons = {
@@ -75,7 +75,7 @@ beacons = {
         {type="item", name="speed-module-4"     , amount=1 },
         {type="item", name="efficiency-module-4", amount=1 },
         {type="item", name="processing-unit"    , amount=40}
-    }, technology = "effect-transmission-mk3" },
+    }, technology = "effect-transmission-mk3" }
 }
 
 speed_modules = {
@@ -92,7 +92,7 @@ speed_modules = {
     { order = "b-c", name = "speed-module-6", energy_consumption = 1.7, speed = 1.0, tier = 6, energy_required = 480, ingredients = {
         {type="item", name="speed-module-5" , amount=4 },
         {type="item", name="processing-unit", amount=10}
-    }, technology = "speed-module-6" },
+    }, technology = "speed-module-6" }
 }
 
 efficiency_modules = {
@@ -109,7 +109,7 @@ efficiency_modules = {
     { order = "c-c", name = "efficiency-module-6", energy_consumption = -3.4, pollution = -1.7, tier = 6, energy_required = 480, ingredients = {
         {type="item", name="efficiency-module-5", amount=4 },
         {type="item", name="processing-unit"    , amount=10}
-    }, technology = "efficiency-module-6" },
+    }, technology = "efficiency-module-6" }
 }
 
 productivity_modules = {
@@ -126,5 +126,24 @@ productivity_modules = {
     { order = "d-c", name = "productivity-module-6", productivity = 0.34, energy_consumption = 1.4, pollution = 0.25, speed = -0.15, tier = 6, energy_required = 480, ingredients = {
         {type="item", name="productivity-module-5", amount= 4},
         {type="item", name="processing-unit"      , amount=10}
-    }, technology = "productivity-module-6" },
+    }, technology = "productivity-module-6" }
 }
+
+if (mods["quality"]) then
+    quality_modules = {
+        { order = "d-a", name = "quality-module-4", quality = 0.3, speed = -0.05, tier = 4, energy_required = 120, ingredients = {
+            {type="item", name="quality-module-3", amount=6 },
+            {type="item", name="processing-unit" , amount=10}
+        }, technology = "quality-module-4" },
+
+        { order = "d-b", name = "quality-module-5", quality = 0.35, speed = -0.05, tier = 5, energy_required = 240, ingredients = {
+            {type="item", name="quality-module-4", amount=4 },
+            {type="item", name="processing-unit" , amount=10}
+        }, technology = "quality-module-5" },
+
+        { order = "d-c", name = "quality-module-6", quality = 0.4, speed = -0.05, tier = 6, energy_required = 480, ingredients = {
+            {type="item", name="quality-module-5", amount= 4},
+            {type="item", name="processing-unit" , amount=10}
+        }, technology = "quality-module-6" }
+    }
+end

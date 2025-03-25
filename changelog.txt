@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 2025-03-25
+  Features:
+    - Added basic support (no icons yet!) for quality mod
   Fixes:
     - HR version is no longer supported, all graphics are now HR
     - added modules-t4 as banned as that mod does the same (lesser than this)
