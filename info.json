@@ -1,6 +1,6 @@
 {
   "name": "FactorioExtended-Plus-Module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "factorio_version": "2.0",
   "title": "FactorioExtended Plus-Module",
   "author": "roland77, MaxelDel",
@@ -8,7 +8,7 @@
   "homepage": "",
   "description": "Adds a Mk4-6 Modules and 2 new Beacons.",
   "dependencies": [
-    "base >= 2.0.32",
+    "base >= 2.0.43",
     "?quality",
     "FactorioExtended-Plus-Core >= 2.0.4",
     "!modules-t4"

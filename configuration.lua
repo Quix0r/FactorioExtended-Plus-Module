@@ -129,7 +129,7 @@ productivity_modules = {
     }, technology = "productivity-module-6" }
 }
 
-if (mods["quality"]) then
+if script.active_mods["quality"] then
     quality_modules = {
         { order = "e-a", name = "quality-module-4", quality = 0.3, speed = -0.05, tier = 4, energy_required = 120, ingredients = {
             {type="item", name="quality-module-3", amount=6 },
