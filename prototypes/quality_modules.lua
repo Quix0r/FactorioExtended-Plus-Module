@@ -5,7 +5,7 @@ for _, quality_module in pairs(quality_modules) do
 
     item.name = quality_module.name
     item.localised_name = { "module-name.quality-" .. quality_module.tier }
-    -- @todo item.icon = "__FactorioExtended-Plus-Module__/graphics/icons/" .. quality_module.name .. ".png"
+    -- @todo item.icon = "__FactorioExtended-Plus-Assets__/module/icons/" .. quality_module.name .. ".png"
     item.order = quality_module.order
     item.subgroup = "fb-module"
     item.tier = quality_module.tier

@@ -5,7 +5,7 @@ for x, efficiency_module in pairs(efficiency_modules) do
 
     item.name = efficiency_module.name
     item.localised_name = { "module-name.efficiency-" .. efficiency_module.tier }
-    item.icon = "__FactorioExtended-Plus-Module__/graphics/icons/" .. efficiency_module.name .. ".png"
+    item.icon = "__FactorioExtended-Plus-Assets__/module/icons/" .. efficiency_module.name .. ".png"
     item.order = efficiency_module.order
     item.subgroup = "fb-module"
     item.tier = efficiency_module.tier

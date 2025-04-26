@@ -5,7 +5,7 @@ for _, speed_module in pairs(speed_modules) do
 
     item.name = speed_module.name
     item.localised_name = { "module-name.speed-" .. speed_module.tier }
-    item.icon = "__FactorioExtended-Plus-Module__/graphics/icons/" .. speed_module.name .. ".png"
+    item.icon = "__FactorioExtended-Plus-Assets__/module/icons/" .. speed_module.name .. ".png"
     item.order = speed_module.order
     item.subgroup = "fb-module"
     item.tier = speed_module.tier
