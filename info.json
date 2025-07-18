@@ -8,10 +8,10 @@
   "homepage": "",
   "description": "Adds a Mk4-6 Modules and 2 new Beacons.",
   "dependencies": [
-    "base >= 2.0.43",
+    "base >= 2.0.60",
     "?quality",
     "FactorioExtended-Plus-Assets >= 0.0.1",
-    "FactorioExtended-Plus-Core >= 2.0.4",
+    "FactorioExtended-Plus-Core >= 2.0.6",
     "!modules-t4"
   ]
 }
