@@ -1,8 +1,8 @@
 {
-  "name": "FactorioExtended-Plus-Module",
+  "name": "FactorioExtended-Plus-Module2",
   "version": "2.0.2",
   "factorio_version": "2.0",
-  "title": "FactorioExtended Plus-Module",
+  "title": "FactorioExtended Plus - Modules 2.0",
   "author": "roland77, MaxelDel",
   "contact": "",
   "homepage": "",
@@ -10,8 +10,8 @@
   "dependencies": [
     "base >= 2.0.72",
     "?quality",
-    "FactorioExtended-Plus-Assets >= 0.0.1",
-    "FactorioExtended-Plus-Core >= 2.0.6",
+    "FactorioExtended-Plus-Assets2 >= 0.0.1",
+    "FactorioExtended-Plus-Core2 >= 2.0.6",
     "!modules-t4"
   ]
 }
